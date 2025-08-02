@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../redux/action';
+import { Post } from '../redux/types';
 
 interface HomeProps {
-    posts: any;
+  posts: Post[];
     fetchPosts: () => void;
   }
 
